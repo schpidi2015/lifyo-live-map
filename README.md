@@ -7,6 +7,19 @@ LiF:YO - Life is feudal : Your Own - live map - PROTOTYPE
 !!! Still work in progress here !!!
 !!! Still work in progress here !!!
 
+Because this is my first repository on github I say sorry for my mistakes!
+If somebody has tips for me... shoot.
+
+I think I only used free stuff, published on git and so on... 
+My stuff can be used, copied, changed without any limitation.
+What licence fits best for this scenario?
+But I would be happy if you give me short notice that I see it live on your server ;)
+Cheers & Thanks!
+
+!!! Still work in progress here !!!
+!!! Still work in progress here !!!
+!!! Still work in progress here !!!
+
 Introduction
 ------------
 
@@ -102,10 +115,5 @@ Further Ideas
 - player layer should only show players of own guild
 - checkbox in map client to disable sounds
 
-
-
-!!! Still work in progress here !!!
-!!! Still work in progress here !!!
-!!! Still work in progress here !!!
 
 
