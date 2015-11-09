@@ -1,0 +1,8 @@
+{
+   "port"       : 63636,
+   "mysqlhost"  : "enter your ip here",
+   "mysqldb"    : "enter your db name here",
+   "mysqluser"  : "enter your db user here",
+   "mysqlpw"    : "enter your pw here",
+   "mysqllimit" : 100
+}
