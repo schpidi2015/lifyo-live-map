@@ -79,6 +79,12 @@ First of all you need to install the database objects into your mysql game datab
 - no installation needed, because node.js server should provide all files needed
 - we all used Chrome or iexplorer and I am not sure if the map runs on other browsers
 
+4) additional map grafics
+-------------------------
+- because of the big size my upload of the map tiles to github always broke
+- if you want to see the colored game map, you will need this additional files
+- download here : https://drive.google.com/folderview?id=0Bxx7uYuWxpcLaGdtSHpiTEE3TG8&usp=sharing
+- unpack to public folder from node.js server
 
 Further Ideas
 -------------
