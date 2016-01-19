@@ -3,6 +3,13 @@ LiF:YO - Life is feudal : Your Own - live map - PROTOTYPE
 
 --------------------------------------------------------------------------------
 
+!!! W A R N I N G !!!
+!!!
+!!! Please read this carefully before you install to your server !!!
+!!!
+!!! W A R N I N G !!!
+
+
 !!! Still work in progress here !!!
 !!! Still work in progress here !!!
 !!! Still work in progress here !!!
@@ -75,10 +82,25 @@ Installation
 1) mysql objects
 ----------------
 First of all you need to install the database objects into your mysql game database.
-- backup your database
-- some stuff you will not need for the map (e.g. durability repair stuff - please refer to my blog or the forest thinner...)
+- backup your database !!
+- check that your backup was successful ;)
 - if you are unsure what you do... don´t... you will break your game database
-- a rough sequence to install: first of all the tables, then procedures & functions, then views, then triggers and after all: the two events... look at our file names... think... or ask if you are unsure!
+- a rough sequence to install: 
+-- first of all the tables ($lt_t_*), then
+-- procedures (first helpers $lt_p_* then batch-processes $lt_pb_*), then
+-- functions ($lt_f_*), then
+-- views ($lt_v_*, some views are based on other views... keep an eye on the from-clause of the view to install in right order; easy way = install all views twice ;)), then
+-- triggers ($lt_tr_*), and after all
+-- the two events ($lt_e_*) 
+look at our file names... think... or ask if you are unsure!
+
+
+1b) mysql objects (optional, deactivated by default)
+- some stuff you will not need for the map : forest thinner and durabilty loss repair (please refer to my blog for more information)
+- dont install/activate/run unless you are sure what you do
+- event and batch-procedure (file names *forest_thinner*) for forest thinner (better performance)
+- triggers for durability loss repair ($lt_tr_movable_objects_BU.sql, $lt_tr_unmovable_objects_BU.sql and $lt_pB_repairCraftingStations.sql) 
+
 
 2) node.js server
 -----------------

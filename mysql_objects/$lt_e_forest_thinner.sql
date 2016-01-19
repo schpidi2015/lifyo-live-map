@@ -13,8 +13,11 @@
 -- Exportiere Struktur von Ereignis lif_1.$lt_e_forest_thinner
 DELIMITER //
 CREATE EVENT `$lt_e_forest_thinner` ON SCHEDULE EVERY 1 DAY STARTS '2015-04-30 03:00:00' ON COMPLETION PRESERVE DISABLE DO BEGIN
+   
+   /* ONLY ACTIVATE IF YOU ARE SURE WHAT YOU DO !!
+   
    /* call forest thinner with parameters stumpsOnly = 1 and TerID = NULL (means all) */
-   call $lt_pB_forest_thinner(1, null);
+   --call $lt_pB_forest_thinner(1, null);
 END//
 DELIMITER ;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

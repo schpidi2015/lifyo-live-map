@@ -15,9 +15,11 @@ DROP PROCEDURE IF EXISTS `$lt_pB_repairCraftingStations`;
 DELIMITER //
 CREATE PROCEDURE `$lt_pB_repairCraftingStations`()
 BEGIN
+    /* ONLY ACTIVATE IF YOU ARE SURE WHAT YOU DO !!
 	UPDATE unmovable_objects     
 	   SET durability = 65535, CreatedDurability = 65535
 	 WHERE $lt_f_get_ObjTypeParentID(ObjectTypeID) = 64 OR $lt_f_get_ObjTypeParentID($lt_f_get_ObjTypeParentID(ObjectTypeID)) = 64;
+	 */
 END//
 DELIMITER ;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -15,6 +15,9 @@ DROP TRIGGER IF EXISTS `$lt_tr_unmovable_objects_BU`;
 SET @OLDTMP_SQL_MODE=@@SQL_MODE, SQL_MODE='STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION';
 DELIMITER //
 CREATE TRIGGER `$lt_tr_unmovable_objects_BU` BEFORE UPDATE ON `unmovable_objects` FOR EACH ROW BEGIN
+   
+   /* ONLY ACTIVATE IF YOU ARE SURE WHAT YOU DO !!
+
    -- here you can set how much durabilty loss of the game standard you want to take
    declare l_durabilityLossRate tinyint default 0;
    declare l_parentID int unsigned default 0;
@@ -50,6 +53,8 @@ CREATE TRIGGER `$lt_tr_unmovable_objects_BU` BEFORE UPDATE ON `unmovable_objects
 			   (new.ID, current_timestamp, new.Durability, new.CreatedDurability, 'UPDATE by trigger');
       end if;
    end if;
+
+   */
 
 END//
 DELIMITER ;
